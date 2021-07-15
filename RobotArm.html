@@ -1,0 +1,64 @@
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="RobotArm.css" type="text/css">
+    <title>Robot Arm Control</title>
+    <script src="https://kit.fontawesome.com/abe6457955.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+      
+  <form action="connecting.php" method="POST">
+   <span>  <h1 style="text-align: center; color: #D27662;"> Robot Arm Control Panel</h1>  </span> 
+    <div>
+        <button type="submit" name="save" value="save">save</button> 
+        <button type="submit" name="run" value="run" >run</button>  
+      
+          <hr >
+
+        <p>
+            <label style="padding-right:20px;">motor 1</label>
+            <input type="range" id="motor1" name="motor1" value="motor1" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en1').innerHTML = this.value" />
+            <label id="en1" ></label>
+          </p>
+          <p>
+            <label style="padding-right:20px;">motor 2</label>
+            <input type="range" id="motor2" name="motor2" value="motor2" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en2').innerHTML = this.value" />
+            <label id="en2"></label>
+          </p>
+          <p>
+            <label style="padding-right:20px;">motor 3</label>
+            <input type="range" id="motor3" name="motor3" value="motor3" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en3').innerHTML = this.value" />
+            <label id="en3" ></label>
+          </p>
+          <p>
+            <label style="padding-right:20px;">motor 4</label>
+            <input type="range" id="motor4" name="motor4" value="motor4" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en4').innerHTML = this.value" />
+            <label id="en4" ></label>
+          </p>
+          <p>
+            <label style="padding-right:20px;">motor 5</label>
+            <input type="range" id="motor5" name="motor5" value="motor5" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en5').innerHTML = this.value" />
+            <label id="en5" ></label>
+          </p>
+          <p>
+            <label style="padding-right:20px;">motor 6</label>
+            <input type="range" id="motor6" name="motor6" value="motor6" min="0" max="180" class="slider"
+                   oninput="document.getElementById('en6').innerHTML = this.value" />
+            <label id="en6" ></label>
+          </p>
+      </div> 
+  </form>
+    
+  <footer> 
+    <a href="index.html" style="color:#B31D3F; font-size:20px;"> <i class="fas fa-angle-double-left" style="font-size:30px;"></i> Go Back</a>
+  </footer>
+  </body>
+</html>
