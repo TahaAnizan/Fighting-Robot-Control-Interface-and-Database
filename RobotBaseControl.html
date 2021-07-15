@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="BaseControl.css" type="text/css" > 
+    <title>Fighting Robot Base Control</title>
+    <script src="https://kit.fontawesome.com/abe6457955.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+     <br> <br>    <br> <br>
+
+
+
+   <form action= "ConnectingRobotBase.php" method="POST" > 
+
+    <div class="container"> 
+   
+    <div class="center"> 
+      <button type="submit" name="forward" value="forward" oninput="document.getElementById('froward').innerHTML = this.value"><i class="fas fa-arrow-alt-circle-up" style="font-size:30px;color:#CCB5B0;"></i> </button>
+       <label id="forward" ></label>
+  </div>
+    
+   <!--LEFT, STOP and RIGHT Buttons -->
+  <div class="center"> 
+     <button type="submit" name="leftt" value="leftt" oninput="document.getElementById('left').innerHTML = this.value"><i class="fas fa-arrow-alt-circle-left" style="font-size:30px;color:#CCB5B0;"></i> </button> 
+     <label id="left" ></label>
+    
+     <button type="submit" name="stoop" value="stoop" oninput="document.getElementById('stop').innerHTML = this.value"> Stop </button> 
+     <label id="stop" ></label>
+
+     <button type="submit" name="rightt" value="rightt" oninput="document.getElementById('right').innerHTML = this.value"><i class="fas fa-arrow-alt-circle-right" style="font-size:30px;color:#CCB5B0;"></i> </button> 
+     <label id="right" ></label>
+  
+  </div>
+  
+ <!--BACKWARD Button -->
+  <div class="center"> 
+    <button type="submit" name="backward" value="	backward" oninput="document.getElementById('backward').innerHTML = this.value"><i class="fas fa-arrow-alt-circle-down" style="font-size:30px;color:#CCB5B0;"></i> </button>
+     <label id="backward" ></label>
+  </div>
+
+<!-- JS Code for send the value  -->
+</div>
+
+ </form>  
+
+<footer> 
+  <a href="index.html" style="color:#B31D3F; font-size: 20px; " > <i class="fas fa-angle-double-left" style="font-size:30px;"></i> Go Back</a>
+</footer>
+
+    </body>
+    </html>
